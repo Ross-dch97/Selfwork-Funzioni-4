@@ -1,22 +1,20 @@
 
-
-let str = 'i topi non avevano nipoti'
-
-str = str.replace(/\W/g, "");
-
-let splitted = str.split('').reverse().join('');
-
-if (str == splitted) {
-    console.log('true');
+function controlString(stringa) {
     
-}else{
-    console.log('false');
-    
+    stringa = stringa.replace(/\W/g, "");
+
+    let reverse = stringa.split('').reverse().join('');
+     
+
+    if (stringa == reverse ) {
+        return true ;
+    }else{
+        return false;
+    }
+
 }
 
 
-
-
-
+console.log(controlString('i topi non avevano nipoti'));
 
 
